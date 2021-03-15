@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Archive>
+  <Name>PhamacyViewer.Android</Name>
+  <PackageName>com.companyname.phamacyviewer</PackageName>
+  <PackageVersionCode>1</PackageVersionCode>
+  <PackageVersionName>1.0</PackageVersionName>
+  <PackageFormat>apk</PackageFormat>
+  <CreationDate>637513735178895002</CreationDate>
+  <SolutionName>PhamacyViewer</SolutionName>
+  <SolutionPath>C:\Users\Fenazon\source\repos\PhamacyViewer\PhamacyViewer.sln</SolutionPath>
+  <Status></Status>
+  <Configuration>
+    <DebugMode>false</DebugMode>
+  </Configuration>
+</Archive>
