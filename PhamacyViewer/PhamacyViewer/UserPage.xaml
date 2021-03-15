@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PhamacyViewer.UserPage" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content BackgroundColor="Black" NavigationPage.HasNavigationBar="False">
+        <StackLayout Spacing="10" Padding="0" BackgroundColor="#004957" >
+            <Frame BackgroundColor="#005557" Padding="24" CornerRadius="0" >
+                <Label Text="Smart hospital" HorizontalOptions="Center" TextTransform="Uppercase" HorizontalTextAlignment="Center" TextColor="White" 
+                   CharacterSpacing="5" FontSize="26"/>
+            </Frame>
+
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="UpdateBtn"  Text="Обновить" HorizontalOptions="FillAndExpand"  BackgroundColor="White" Background="#004957" Clicked="UpdateBtn_Clicked"></Button>
+                <Button x:Name="LogoutBtn" Text="Выйти" HorizontalOptions="FillAndExpand"  BackgroundColor="White" Background="#004957" Clicked="LogoutBtn_Clicked"></Button>
+            </StackLayout>
+            <Frame BackgroundColor="#004057" Padding="0" CornerRadius="0" >
+                <Label x:Name="UserNameLabel" Text="Иванов Иван Иванович" HorizontalOptions="Center" HorizontalTextAlignment="Center" TextColor="White" 
+                   CharacterSpacing="5" FontSize="26"/>
+            </Frame>
+            <StackLayout x:Name="CardsStack" Spacing="10">
+                <CollectionView x:Name="CollView" x:DataType="Label">
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Span="1" Orientation="Vertical" HorizontalItemSpacing="5"/>
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Label FontSize="22" Padding="12,12,12,12" Text="{Binding Path=Text}" BackgroundColor="#004057" Background="#004957"></Label>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

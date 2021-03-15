@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PhamacyViewer.AuthPage" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content BackgroundColor="Black" NavigationPage.HasNavigationBar="False">
+        <StackLayout Spacing="30" Padding="0" BackgroundColor="#004957" >
+            <Frame BackgroundColor="#3B6154" Padding="24" CornerRadius="0" >
+                <Label Text="Smart hospital" HorizontalOptions="Center" TextTransform="Uppercase" HorizontalTextAlignment="Center" TextColor="White" 
+                   CharacterSpacing="5" FontSize="26"/>
+            </Frame>
+            <StackLayout Orientation="Horizontal" Padding="12,12,12,12">
+                <Label x:Name="EmailAuthLabel" TextColor="#fff7eb" Padding="0,10,0,0" Text="Email:" FontSize="24"></Label>
+                <Entry x:Name="EmailAuthEntry"  HorizontalOptions="FillAndExpand" FontSize="18"></Entry>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Padding="12,12,12,12" >
+                <Label x:Name="PasswordAuthLabel" TextColor="#fff7eb" Padding="0,10,0,0" Text="Пароль:" FontSize="24"></Label>
+                <Entry x:Name="PasswordAuthEntry" IsPassword="True" HorizontalOptions="FillAndExpand" FontSize="18"></Entry>
+            </StackLayout>
+            <Button x:Name="AuthorizationBtn" Text="Вход" TextColor="#fff7eb" BackgroundColor="White" Background="#004957"  HorizontalOptions="Center"   
+                CharacterSpacing="5" FontSize="22" Clicked="AuthorizationBtn_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

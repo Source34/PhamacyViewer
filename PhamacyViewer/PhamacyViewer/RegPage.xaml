@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PhamacyViewer.RegPage"  NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content BackgroundColor="Black" NavigationPage.HasNavigationBar="False">
+        <StackLayout Spacing="30" Padding="0" BackgroundColor="#004957" >
+            <Frame BackgroundColor="#005557" Padding="24" CornerRadius="0" >
+                <Label Text="Smart hospital" HorizontalOptions="Center" TextTransform="Uppercase" HorizontalTextAlignment="Center" TextColor="#fff7eb"
+                   CharacterSpacing="5" FontSize="26"/>
+            </Frame>
+            <StackLayout Orientation="Horizontal" Padding="12,12,12,12">
+                <Label Padding="0,10,0,0" TextColor="#fff7eb" Text="ФИО:" FontSize="24"></Label>
+                <Entry TextColor="#fff7eb"  x:Name="FioEntry" HorizontalOptions="FillAndExpand" FontSize="18" PlaceholderColor="#000000"></Entry>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Padding="12,12,12,12">
+                <Label Padding="0,10,0,0" TextColor="#fff7eb" Text="Email:" FontSize="24"></Label>
+                <Entry TextColor="#fff7eb"  x:Name="EmailEntry" HorizontalOptions="FillAndExpand" FontSize="18" Visual="Material"></Entry>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Padding="12,12,12,12">
+                <Label Padding="0,10,0,0" TextColor="#fff7eb" Text="Пароль:" FontSize="24"></Label>
+                <Entry  TextColor="#fff7eb" x:Name="PasswordEntry" IsPassword="True" HorizontalOptions="FillAndExpand" FontSize="18"></Entry>
+            </StackLayout>
+            <Button x:Name="RegistrationBtn" Text="Зарегистрироваться" BackgroundColor="White" Background="#004957"  HorizontalOptions="Center"   
+                CharacterSpacing="1" TextColor="#fff7eb" FontSize="22" Clicked="RegistrationBtn_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
