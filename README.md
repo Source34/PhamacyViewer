@@ -1,6 +1,6 @@
 ## Оглавление
 .NET Standart 2.1 Xamarin
-##Экранные формы приложения
+## Экранные формы приложения
 
 ![](https://sun9-26.userapi.com/impg/dlKA8wCVdkzho4NUENylgg0K5nTXC48su3RGmA/tKMDSSpazJ8.jpg?size=720x1600&quality=96&sign=7066b00e4ef683fb751fe889aac1641d&type=album)
 
